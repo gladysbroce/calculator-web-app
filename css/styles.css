@@ -1,0 +1,191 @@
+/***
+File Decsription: CSS File for Online Calculator
+***/
+
+/* Style for all elements */
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background: #ffeff3;
+}
+
+/* Whole calculator */ 
+#main {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Screen Panel */
+.screen-container {
+    width:100%;
+    height: 110px;
+    background-color: #521d3b;
+}
+
+/* Main and Lower Screen */
+.result {
+    width:94%;
+    text-align: right;
+    color: #fce1ea;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* Main Screen */
+#display {
+    height: 65%;
+    font-size: 28px;
+    padding-top: 6%;
+    float: right;
+}
+
+/* Lower Screen */
+#output {
+    height: 35%;
+    font-size: 21px;
+    padding-top: 4%;
+    color: #ecd4dc;
+}
+
+/* All buttons */
+.btn {
+    width: 25%;
+    height: 74px;
+    float: left;
+    outline: none;
+    background-color: #000000;
+    color: #fce1ea;
+    font-size: 22px;
+    border: 0;
+}
+
+/* All buttons(when clicked) */
+.btn:active {
+    background-color: #18020f;
+}
+
+/* Operator buttons */
+.opeBtn {
+    color: #484848;
+}
+
+/* Equal Sign */
+.equal {
+    background-color: #72324d;
+    width: 50%;
+    color: #ffffff
+}
+
+/* Equal Sign(when clicked) */
+.equal:active {
+    background-color: #73304c;
+}
+
+/* When resizing height to shorter than normal: */
+@media only screen and (max-height:480px)
+{
+    /* Whole Calculator */
+    #main {
+        height: 100%;
+    }
+    
+    /* Whole Screen */
+    .screen-container {
+        height: 25vh;
+    }
+    
+    /* Main Screen */
+    #display {
+        font-size: 28px;
+        padding-top: 0vh;
+    }
+
+    /* Lower Screen */
+    #output {
+        font-size: 20px;
+        padding-top: 0vh;
+    }
+    
+    /* All buttons */
+    .btn {
+        height: 15vh;
+    }
+}
+
+/* For small screen and mobile phones: */
+@media only screen and (max-width:300px),
+only screen and (max-device-width:480px),
+only screen and (min-device-width:320px) and (max-device-width:740px) and (orientation:landscape)
+{
+    
+    /* Whole Calculator */
+    #main {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Whole Screen */
+    .screen-container {
+        height: 25vh;
+    }
+    
+    /* Main Screen */
+    #display {
+        font-size: 33px;
+        padding-top: 5vh;
+    }
+
+    /* Lower Screen */
+    #output {
+        font-size: 25px;
+        padding-top: 5vh;
+    }
+    
+    /* All buttons */
+    .btn {
+        width: 25%;
+        height: 15vh;
+        font-size: 28px;
+    }
+    
+    /* Equal Sign */
+    .equal {
+        width: 50%;
+    }
+}
+
+/* Additional style for landscape: */
+@media only screen and (min-device-width:320px) and (max-device-width:740px) and (orientation:landscape)
+{    
+    /* Screen Panel */
+    .screen-container {
+        height: 30vh;
+    }
+    
+    /* Main Screen */
+    #display {
+        font-size: 30px;
+        padding-top: 5vh;
+    }
+    
+    /* Lower Screen */
+    #output {
+        font-size: 23px;
+        padding-top: 2vh;
+    }
+    
+    /* All buttons */
+    .btn {
+        height: 14vh;
+        font-size: 25px;
+    }
+}

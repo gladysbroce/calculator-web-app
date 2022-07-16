@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- 
+Program Description: This is an online calculator that supports the following basic operations:
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulo    
+-->
+<html>
+    <head>
+        <title>Online Calculator</title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="#" />
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- Calculator -->
+        <div id="main">
+            <!-- Screen Container -->
+            <div class="screen-container">
+                <!-- Main Screen Display -->
+                <div class="result">
+                    <div id="display"></div>
+                </div>
+                <!-- Lower Screen Display -->
+                <div class="result">
+                    <div id="output"></div>
+                </div>
+            </div>
+            <!-- 1st Row -->
+            <div class="keys">
+                <button class="btn opeBtn clear" value="C">C</button>
+                <button class="btn opeBtn backspace" value="←">←</button>
+                <button class="btn opeBtn operator" value="%">%</button>
+                <button class="btn opeBtn operator" value="/">/</button>
+            </div>
+            <!-- 2nd Row -->
+            <div class="keys">
+                <button class="btn digit" value="7">7</button>
+                <button class="btn digit" value="8">8</button>
+                <button class="btn digit" value="9">9</button>
+                <button class="btn opeBtn operator" value="*">x</button>
+            </div>
+            <!-- 3rd Row -->
+            <div class="keys">
+                <button class="btn digit" value="4">4</button>
+                <button class="btn digit" value="5">5</button>
+                <button class="btn digit" value="6">6</button>
+                <button class="btn opeBtn operator" value="-">-</button>
+            </div>
+            <!-- 4th Row -->
+            <div class="keys">
+                <button class="btn digit" value="1">1</button>
+                <button class="btn digit" value="2">2</button>
+                <button class="btn digit" value="3">3</button>
+                <button class="btn opeBtn operator" value="+">+</button>
+            </div>
+            <!-- 5th Row -->
+            <div class="keys">
+                <button class="btn digit zero" value="0">0</button>
+                <button class="btn decimal" value=".">.</button>
+                <button class="btn opeBtn equal" value="=">=</button>
+            </div>
+        </div>
+    </body>
+</html>
